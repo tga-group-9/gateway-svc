@@ -15,7 +15,8 @@ spec:
       containers:
       - name: gateway-container
         # image: anokhadocker/gateway:latest
-        image: gateway:latest
+        # image: gateway:latest
+        image: ${REPOSITORY_TAG}
         imagePullPolicy: Never
         ports:
         - containerPort: 8080
